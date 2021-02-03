@@ -21,6 +21,7 @@ day_info, img_info = time()
 path = os.path.join(FILE_PATH,day_info)
 if os.path.exists(path) == True:
     shutil.rmtree(path)
+    os.mkdir(path)
 else:
     os.mkdir(path)
 
